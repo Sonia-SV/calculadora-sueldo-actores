@@ -69,9 +69,9 @@ const disabledOptions = (production) => {
 const renderResults = (production, role, contract, duration) => {
   const salary = wages[production][role][contract];
   contractType.innerHTML = 'por ' + translation[contract];
-  partialResult.innerHTML = salary + ' €';
+  partialResult.innerHTML = salary + ' € brutos';
   const totalSalary = isNaN(duration) ? 1 * salary : duration * salary;
-  totalResult.innerHTML = totalSalary.toFixed(2) + ' €';
+  totalResult.innerHTML = totalSalary.toFixed(2) + ' € brutos';
   warning.innerHTML = '';
   const iPAmount = totalSalary * 0.05;
   paintIPWarning(iPAmount.toFixed(2));
