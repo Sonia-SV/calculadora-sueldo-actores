@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="description" name="description" />
+    <meta name="google" content="notranslate" />
+    <meta content="Mashup templates have been developped by Orson.io team" name="author" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Calculadora sueldos actores</title>
+
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body style="height: 100vh">
+    <main class="content-wrapper">
+      <header class="white-text-container section-container">
+        <div class="text-center">
+          <h1>Calculadora de salario de actores de Audiovisual</h1>
+          <h3>Según la tabla salarial de la <a target='_blank' href="https://www.uniondeactores.com/images/recursos/documentos/2020_-_TABLAS_DE_AUDIOVISUALES.pdf">Unión de Actores</a></h3>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="card col-xs-12">
+              <div class="card-block">
+                <h2>Información sobre tu contrato</h2>
+                <form action="" class="reveal-content">
+                  <div class="form-group col-xs-12 col-md-3">
+                    <h4>Tipo de producción</h4>
+                    <select id="production" name="production" class="form-control">
+                      <option value="all">Elige una opción</option>
+                      <option value="film">Cine</option>
+                      <option value="tv">Televisión</option>
+                      <option value="commercial">Publicidad</option>
+                      <option value="lowBudget">Bajo presupuesto *</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xs-12 col-md-3">
+                    <h4>Tipo de papel</h4>
+                    <select id="role" name="role" class="form-control">
+                      <option value="all">Elige una opción</option>
+                      <option value="leading">Protagonista</option>
+                      <option value="supporting">Secundario</option>
+                      <option value="character">Reparto</option>
+                      <option value="smallParts">Pequeñas partes</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xs-12 col-md-3">
+                    <h4>Tipo de contrato</h4>
+                    <select id="contract" name="contract" class="form-control">
+                      <option value="session" class="sesionContract">Sesión</option>
+                      <option value="week" class="weekContract">Semana</option>
+                      <option value="month" class="monthContract">Mes</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xs-12 col-md-3">
+                    <h4>Duración del contrato</h4>
+                    <div class="form-group">
+                      <input type="number" class="form-control numberInput" id="duration" name="duration">
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <small class="lowBudgetWarning"></smal>
+                </div>
+                  <div class="form-group col-xs-12 text-center">
+                    <br>
+                    <button class="btn btn-primary resetButton">Reiniciar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="card">
+              <div class="card-block">
+                <h2>Tu salario:</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="result">
+                      <h3 class="h5 date-title">Tu salario <span class="contractType">parcial</span>:</h3>
+                      <h5 class="partialResult">-</h5>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="result">
+                      <h3 class="h5 date-title">Tu salario total:</h3>
+                      <h5 class="totalResult">-</h5>
+                    </div>
+                  </div>
+                  <div class="col-xs-12" style="margin-top: 20px;">
+                    <small class="iPwarning"></>
+                    <small class="warning">(Introduce al menos tipo de produccion y papel para poder calcular tu salario)</small>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-container white-text-container">
+      <div class="container" >
+        <div class="col-xs-12" style="padding-bottom: 40px">
+            <small class="small">© Enero 2021. Sonia Sanz Vivas</small>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/00.js"></script>
+    <script src="./js/01.js"></script>
+  </body>
+</html>
